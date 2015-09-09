@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TemperatureView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="onf-g1-joa">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="G5S-JA-aGi">
+                    <rect key="frame" x="241" y="422" width="55" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="确定" backgroundImage="controlWine_temperature_Done.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" backgroundImage="controlWine_temperature_Done_selected.png"/>
+                    <connections>
+                        <action selector="btnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="BcD-F4-OAt"/>
+                    </connections>
+                </button>
+                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Xue-vK-iPh">
+                    <rect key="frame" x="24" y="422" width="56" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <state key="normal" title="取消" backgroundImage="controlWine_temperature_cancle.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="controlWine_temperature_cancle_selected.png"/>
+                    <connections>
+                        <action selector="cancleClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="eI7-gL-El8"/>
+                    </connections>
+                </button>
+                <view appearanceType="aqua" contentMode="scaleToFill" id="5c2-RW-wOq">
+                    <rect key="frame" x="0.0" y="5" width="320" height="420"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <tableView appearanceType="aqua" clipsSubviews="YES" tag="200" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="46" sectionHeaderHeight="22" sectionFooterHeight="22" id="zxz-j3-jLe">
+                            <rect key="frame" x="16" y="21" width="121" height="368"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="sectionIndexColor" red="0.47058823529999999" green="0.42745098040000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <view appearanceType="aqua" contentMode="scaleToFill" id="5Vs-jn-H72">
+                            <rect key="frame" x="146" y="16" width="161" height="375"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="controlWine_temperature_redPoint.png" id="y6R-Ms-dTg">
+                                    <rect key="frame" x="11" y="384" width="12" height="12"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <view appearanceType="aqua" contentMode="scaleToFill" id="Nd3-8J-V2f" customClass="ITTXibView">
+                                    <rect key="frame" x="27" y="102" width="12" height="72"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="K3d-2F-PLO">
+                                            <rect key="frame" x="0.0" y="0.0" width="12" height="72"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" red="0.89803921568627454" green="0.043137254901960784" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view appearanceType="aqua" contentMode="scaleToFill" id="g4u-Tk-zmM">
+                                    <rect key="frame" x="0.0" y="0.0" width="24" height="375"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="controlWine_temperature_narrow_3.png" id="4dK-DP-1lz">
+                                            <rect key="frame" x="0.0" y="0.0" width="24" height="375"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <imageView appearanceType="aqua" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="controlWine_temperature_back.png" id="tIk-Oc-Kfw">
+                                    <rect key="frame" x="24" y="0.0" width="136" height="375"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="controlWine_tempure_2.png" id="NvJ-Cy-JnY">
+                                    <rect key="frame" x="27" y="16" width="12" height="342"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </imageView>
+                                <view appearanceType="aqua" contentMode="scaleToFill" id="wht-pG-AQ0">
+                                    <rect key="frame" x="27" y="16" width="12" height="12"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" red="0.93725490196078431" green="0.29019607843137252" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <view appearanceType="aqua" contentMode="scaleToFill" id="3hb-eP-ARK">
+                                    <rect key="frame" x="27" y="346" width="12" height="12"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" red="0.93725490196078431" green="0.29019607843137252" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <view appearanceType="aqua" contentMode="scaleToFill" id="ri4-WD-1EO">
+                                    <rect key="frame" x="27" y="344" width="12" height="7"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" red="0.93725490196078431" green="0.29019607843137252" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <view appearanceType="aqua" contentMode="scaleToFill" id="LLx-PM-MBg">
+                                    <rect key="frame" x="27" y="22" width="12" height="10"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" red="0.93725490196078431" green="0.29019607843137252" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <tableView appearanceType="aqua" clipsSubviews="YES" userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="24" sectionHeaderHeight="1" sectionFooterHeight="1" id="bCW-1C-kiI">
+                                    <rect key="frame" x="51" y="17" width="113" height="342"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="sectionIndexColor" red="0.47058823529999999" green="0.42745098040000001" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </tableView>
+                                <view appearanceType="aqua" contentMode="scaleToFill" id="e9Z-1G-5eA" customClass="ITTXibView">
+                                    <rect key="frame" x="39" y="122" width="112" height="56"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView appearanceType="aqua" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="controlWine_temperature_point.png" id="YO1-Qi-cVS">
+                                            <rect key="frame" x="0.0" y="0.0" width="112" height="56"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </imageView>
+                                        <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EHu-BN-cKe">
+                                            <rect key="frame" x="60" y="18" width="30" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="25"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pgJ-8u-EQF">
+                                            <rect key="frame" x="90" y="21" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐适饮用温度" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BoY-oW-DYc">
+                                    <rect key="frame" x="30" y="380" width="109" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view appearanceType="aqua" contentMode="scaleToFill" id="hLc-I3-8am">
+                                    <rect key="frame" x="39" y="0.0" width="112" height="375"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.38" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_displayLabel" destination="EHu-BN-cKe" id="lbQ-OG-fth"/>
+                <outlet property="_downSecView" destination="ri4-WD-1EO" id="59O-3m-x9c"/>
+                <outlet property="_downView" destination="3hb-eP-ARK" id="1pn-YP-ajO"/>
+                <outlet property="_gestureView" destination="hLc-I3-8am" id="itO-fH-kCh"/>
+                <outlet property="_picView" destination="4dK-DP-1lz" id="okv-VJ-Qxl"/>
+                <outlet property="_platformView" destination="5Vs-jn-H72" id="FsG-EY-n1K"/>
+                <outlet property="_redView" destination="Nd3-8J-V2f" id="voS-0Q-QKd"/>
+                <outlet property="_slider" destination="e9Z-1G-5eA" id="MIW-c9-Si5"/>
+                <outlet property="_temperatureTableView" destination="bCW-1C-kiI" id="qrB-55-bW7"/>
+                <outlet property="_upSecView" destination="LLx-PM-MBg" id="3yn-UF-bZ8"/>
+                <outlet property="_upView" destination="wht-pG-AQ0" id="IGF-kq-Kr7"/>
+                <outlet property="_wineKindTableView" destination="zxz-j3-jLe" id="B8b-go-2mm"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="controlWine_temperature_Done.png" width="110" height="110"/>
+        <image name="controlWine_temperature_Done_selected.png" width="110" height="110"/>
+        <image name="controlWine_temperature_back.png" width="272" height="750"/>
+        <image name="controlWine_temperature_cancle.png" width="110" height="110"/>
+        <image name="controlWine_temperature_cancle_selected.png" width="110" height="110"/>
+        <image name="controlWine_temperature_narrow_3.png" width="48" height="750"/>
+        <image name="controlWine_temperature_point.png" width="224" height="112"/>
+        <image name="controlWine_temperature_redPoint.png" width="24" height="24"/>
+        <image name="controlWine_tempure_2.png" width="24" height="684"/>
+    </resources>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginAnimationView">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="420"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_backColor_image.png" id="Evr-IH-ZQj">
+                    <rect key="frame" x="0.0" y="0.0" width="270" height="420"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haier_logo.png" id="Wxq-UM-IdU">
+                    <rect key="frame" x="94" y="53" width="82" height="28"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" id="lne-ay-icT">
+                    <rect key="frame" x="102" y="160" width="65" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banding_forground_image.png" id="cY6-0j-M6b" customClass="ITTImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banding_wave_image1.png" id="gHZ-gB-ma8" customClass="ITTImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="130" height="65"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banding_wave_image1.png" id="QSJ-ha-UOd" customClass="ITTImageView">
+                            <rect key="frame" x="-130" y="0.0" width="130" height="65"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banding_wave_image2.png" id="FEZ-Ze-tHf" customClass="ITTImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="130" height="65"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banding_wave_image2.png" id="NhL-R0-mRT" customClass="ITTImageView">
+                            <rect key="frame" x="-130" y="0.0" width="130" height="65"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录中,请稍后" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TkV-f6-sQJ">
+                    <rect key="frame" x="84" y="237" width="102" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_waveImageViewA1" destination="gHZ-gB-ma8" id="MFM-K3-fUG"/>
+                <outlet property="_waveImageViewA2" destination="QSJ-ha-UOd" id="RfX-uJ-TZ7"/>
+                <outlet property="_waveImageViewB1" destination="FEZ-Ze-tHf" id="ISj-Mr-YxS"/>
+                <outlet property="_waveImageViewB2" destination="NhL-R0-mRT" id="jtI-Lr-XUG"/>
+                <outlet property="_waveView" destination="lne-ay-icT" id="nD3-j2-AHJ"/>
+            </connections>
+        </view>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="3W7-D0-Flp">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_wave_image1.png" id="GNf-Tw-2Ha" customClass="ITTImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_wave_image1.png" id="MF0-Oo-Ion" customClass="ITTImageView">
+                    <rect key="frame" x="-100" y="0.0" width="100" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_wave_image2.png" id="Kuk-I5-aBW" customClass="ITTImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_wave_image2.png" id="jAY-0M-OAB" customClass="ITTImageView">
+                    <rect key="frame" x="-100" y="0.0" width="100" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_wave_forground_image.png" id="P3W-CJ-hfD">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="banding_forground_image.png" width="130" height="130"/>
+        <image name="banding_wave_image1.png" width="260" height="130"/>
+        <image name="banding_wave_image2.png" width="260" height="130"/>
+        <image name="haier_logo.png" width="172" height="56"/>
+        <image name="login_backColor_image.png" width="540" height="820"/>
+        <image name="login_wave_forground_image.png" width="100" height="100"/>
+        <image name="login_wave_image1.png" width="200" height="100"/>
+        <image name="login_wave_image2.png" width="200" height="100"/>
+    </resources>
+</document>

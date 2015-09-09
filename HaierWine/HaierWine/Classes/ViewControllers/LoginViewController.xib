@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="_AlertLabel" destination="Zps-UI-jl3" id="p66-cq-0Ej"/>
+                <outlet property="_backgroundView" destination="Rka-gb-VGJ" id="9FX-Uf-dj1"/>
+                <outlet property="_contentView" destination="gpA-ce-A25" id="bl6-d8-hvY"/>
+                <outlet property="_isAutoLogin" destination="wU2-Eo-iCS" id="mgd-3R-USQ"/>
+                <outlet property="_loginButton" destination="niw-gu-TfK" id="ado-F5-jrM"/>
+                <outlet property="_noLoginButton" destination="Qt0-Zu-ZkV" id="fHt-fb-wUA"/>
+                <outlet property="_registerButton" destination="wF7-ZB-f6o" id="Wt8-Wn-Jbt"/>
+                <outlet property="_userNameTextField" destination="iVK-5d-Sux" id="S9H-cs-djh"/>
+                <outlet property="_userPasswordTextField" destination="YwJ-NU-YER" id="kCk-Mf-YRR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="Rka-gb-VGJ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_background_image.png" id="3MQ-Mv-2NE">
+                            <rect key="frame" x="0.0" y="-10" width="320" height="588"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" id="gpA-ce-A25">
+                            <rect key="frame" x="25" y="70" width="270" height="420"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_backColor_image.png" id="aDI-y7-CPW">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="420"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_password_image.png" id="Z8q-zP-ffM">
+                                    <rect key="frame" x="30" y="156" width="16" height="16"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" tag="116" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="密码" minimumFontSize="17" clearButtonMode="whileEditing" id="YwJ-NU-YER">
+                                    <rect key="frame" x="54" y="141.5" width="196" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
+                                    <connections>
+                                        <action selector="beginEdite:" destination="-1" eventType="editingDidBegin" id="wvM-t6-sVz"/>
+                                        <action selector="finishEdite:" destination="-1" eventType="editingDidEndOnExit" id="V2Z-lA-opD"/>
+                                        <action selector="finishEdite:" destination="-1" eventType="editingDidEnd" id="hia-pX-c4w"/>
+                                    </connections>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_account_image.png" id="Lke-nA-gr5">
+                                    <rect key="frame" x="30" y="106.5" width="16" height="16"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="niw-gu-TfK">
+                                    <rect key="frame" x="36" y="317.5" width="205" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <state key="normal" title="登  录" backgroundImage="Login_buttonColor_image.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="Login_buttonColor_image.png"/>
+                                    <connections>
+                                        <action selector="login:" destination="-1" eventType="touchUpInside" id="XZy-DB-EzK"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JxJ-qh-g5V">
+                                    <rect key="frame" x="21" y="200" width="72" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="找回密码">
+                                        <color key="titleColor" white="1" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="findPassword:" destination="-1" eventType="touchUpInside" id="fhx-BH-OQz"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" id="Jp3-xu-9cM">
+                                    <rect key="frame" x="30" y="136.5" width="210" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" id="0Gu-Mp-nBX">
+                                    <rect key="frame" x="30" y="189.5" width="210" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </view>
+                                <textField opaque="NO" clipsSubviews="YES" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="手机号" minimumFontSize="17" clearButtonMode="whileEditing" id="iVK-5d-Sux">
+                                    <rect key="frame" x="54" y="92.5" width="196" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <action selector="beginEdite:" destination="-1" eventType="editingDidBegin" id="t3t-az-s6Y"/>
+                                        <action selector="finishEdite:" destination="-1" eventType="editingDidEndOnExit" id="VMz-4V-df6"/>
+                                    </connections>
+                                </textField>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haier_logo.png" id="EV2-Oi-GoM">
+                                    <rect key="frame" x="92" y="35" width="86" height="28"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wU2-Eo-iCS">
+                                    <rect key="frame" x="155" y="201" width="106" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <inset key="titleEdgeInsets" minX="-19" minY="1" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="10" minY="8" maxX="81" maxY="8"/>
+                                    <state key="normal" title="自动登录" image="show_password_no.png">
+                                        <color key="titleColor" white="1" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" image="show_password_yes.png"/>
+                                    <connections>
+                                        <action selector="isShowPassword:" destination="-1" eventType="touchUpInside" id="LKm-kH-AZn"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qt0-Zu-ZkV">
+                                    <rect key="frame" x="99" y="386.5" width="73" height="31"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="游客浏览">
+                                        <color key="titleColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="visitorBrowse:" destination="-1" eventType="touchUpInside" id="RNq-1l-w6v"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zps-UI-jl3">
+                                    <rect key="frame" x="0.0" y="-27" width="270" height="27"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.87058823529411766" green="0.26666666666666666" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wF7-ZB-f6o">
+                            <rect key="frame" x="58" y="516" width="205" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="注  册" backgroundImage="register_image.png">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="userRegister:" destination="-1" eventType="touchUpInside" id="pyo-Ak-UvY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <gestureRecognizers/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Cqv-Y6-lhT" appends="YES" id="JF4-H6-lmz"/>
+                    </connections>
+                </view>
+            </subviews>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <tapGestureRecognizer id="Cqv-Y6-lhT">
+            <connections>
+                <action selector="tapView:" destination="-1" id="mC4-q3-INu"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="Login_buttonColor_image.png" width="410" height="80"/>
+        <image name="haier_logo.png" width="172" height="56"/>
+        <image name="login_account_image.png" width="28" height="30"/>
+        <image name="login_backColor_image.png" width="540" height="820"/>
+        <image name="login_background_image.png" width="640" height="1136"/>
+        <image name="login_password_image.png" width="28" height="30"/>
+        <image name="register_image.png" width="410" height="80"/>
+        <image name="show_password_no.png" width="30" height="30"/>
+        <image name="show_password_yes.png" width="30" height="30"/>
+    </resources>
+</document>

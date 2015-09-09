@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailWineViewController">
+            <connections>
+                <outlet property="_arrowImageView" destination="r2o-za-VTN" id="Bj9-fU-rdt"/>
+                <outlet property="_bgImageView" destination="so8-Np-Ce6" id="CGd-QO-ii1"/>
+                <outlet property="_certificateImageView" destination="4UP-Yx-O4d" id="fWB-sW-ivd"/>
+                <outlet property="_certificateView" destination="Agb-gd-L3R" id="i2w-nO-xSu"/>
+                <outlet property="_contentView" destination="HNE-0i-i3p" id="YKg-x0-E4c"/>
+                <outlet property="_detailScrollView" destination="KgL-ql-EbI" id="zyp-hA-NZ1"/>
+                <outlet property="_imageBgView" destination="nIi-bT-vIh" id="eiD-gD-saw"/>
+                <outlet property="_newHandLabel" destination="EOY-da-cnN" id="Yz9-y3-nRC"/>
+                <outlet property="_newHandView" destination="bma-dG-n8c" id="Tbu-iS-kwa"/>
+                <outlet property="_textView" destination="eWT-9G-THM" id="1OK-oc-c4d"/>
+                <outlet property="_tipLabel" destination="lif-fn-tWq" id="tPQ-pc-GvQ"/>
+                <outlet property="_tipView" destination="mdB-gd-zdX" id="ISG-Py-HF1"/>
+                <outlet property="_voiceButton" destination="pW6-5K-zS7" id="jSf-kv-Irz"/>
+                <outlet property="_voiceImageView" destination="fSe-zu-tVT" id="nzr-SD-MqW"/>
+                <outlet property="_wineCollectionButton" destination="Wt6-V7-Ufr" id="uMm-xl-VDV"/>
+                <outlet property="_wineForeignName" destination="WlK-F0-uEa" id="rTd-Md-cAw"/>
+                <outlet property="_winePopContentLabel" destination="exj-KN-5os" id="kzo-y0-uXh"/>
+                <outlet property="_winePopContentView" destination="rIl-UF-arG" id="cxf-Ow-v0W"/>
+                <outlet property="_winePopImageView" destination="knc-ab-5pQ" id="vkR-pm-iIh"/>
+                <outlet property="_winePopTitleLabel" destination="pJ7-yG-wEX" id="ihd-D2-p2t"/>
+                <outlet property="_winePopView" destination="b9M-9l-xpf" id="3P8-aj-Mtj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="HNE-0i-i3p">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view alpha="0.95999999999999996" contentMode="scaleToFill" id="DET-jf-bfM">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navBar_background_image.png" id="mNj-8L-Dhz">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" id="QF2-ER-SLz">
+                                    <rect key="frame" x="45" y="33" width="230" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WlK-F0-uEa">
+                                            <rect key="frame" x="0.0" y="0.0" width="230" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="s4m-bA-Smr">
+                                    <rect key="frame" x="0.0" y="28" width="70" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <inset key="imageEdgeInsets" minX="12" minY="3" maxX="34" maxY="3"/>
+                                    <state key="normal" image="detail_backButton_image.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted" image="detail_backButton_image.png"/>
+                                    <connections>
+                                        <action selector="backButtonClick:" destination="-1" eventType="touchUpInside" id="cm9-Og-KtJ"/>
+                                    </connections>
+                                </button>
+                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail_voice3_image.png" id="fSe-zu-tVT">
+                                    <rect key="frame" x="283" y="33" width="24" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pW6-5K-zS7">
+                                    <rect key="frame" x="265" y="28" width="55" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="voiceButtonClick:" destination="-1" eventType="touchUpInside" id="ria-Zk-YbL"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.28235294117647058" green="0.11372549019607843" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" id="KgL-ql-EbI">
+                            <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail_newBackground_image.png" id="so8-Np-Ce6">
+                                    <rect key="frame" x="0.0" y="240" width="320" height="455"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.36470588235294116" green="0.047058823529411764" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        </scrollView>
+                        <view contentMode="scaleToFill" id="VzJ-N0-MJT">
+                            <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wt6-V7-Ufr">
+                                    <rect key="frame" x="30" y="0.0" width="49" height="49"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <inset key="titleEdgeInsets" minX="-58" minY="0.0" maxX="0.0" maxY="-33"/>
+                                    <inset key="imageEdgeInsets" minX="10" minY="6" maxX="10" maxY="14"/>
+                                    <state key="normal" title="收藏" image="detail_collection_image.png">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="selected" image="detail_collectionSelected_image.png"/>
+                                    <state key="highlighted" image="detail_collectionSelected_image.png"/>
+                                    <connections>
+                                        <action selector="toolBarButtonClick:" destination="-1" eventType="touchUpInside" id="XKN-es-50F"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="itz-xG-cd3">
+                                    <rect key="frame" x="129" y="0.0" width="49" height="49"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <inset key="titleEdgeInsets" minX="-58" minY="0.0" maxX="0.0" maxY="-33"/>
+                                    <inset key="imageEdgeInsets" minX="10" minY="5" maxX="10" maxY="14"/>
+                                    <state key="normal" title="购买" image="detail_buy_image.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="toolBarButtonClick:" destination="-1" eventType="touchUpInside" id="UPv-bx-AAc"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uFh-pV-zxm">
+                                    <rect key="frame" x="228" y="0.0" width="49" height="49"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <inset key="titleEdgeInsets" minX="-58" minY="0.0" maxX="0.0" maxY="-33"/>
+                                    <inset key="imageEdgeInsets" minX="10" minY="5" maxX="10" maxY="14"/>
+                                    <state key="normal" title="加入酒柜" image="detail_add_image.png">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="toolBarButtonClick:" destination="-1" eventType="touchUpInside" id="eJq-6Q-xFe"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <view contentMode="scaleToFill" id="b9M-9l-xpf">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="binding_background_image.png" id="DfD-jW-TC5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" id="rIl-UF-arG">
+                    <rect key="frame" x="13" y="43" width="294" height="393"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wineDetail_level_background_image.png" id="Ag3-bj-UxC">
+                            <rect key="frame" x="0.0" y="0.0" width="294" height="393"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wineDteail_pic_image.png" id="SRS-HN-KoD">
+                            <rect key="frame" x="0.0" y="0.0" width="294" height="146"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pJ7-yG-wEX">
+                            <rect key="frame" x="0.0" y="164" width="294" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" id="exj-KN-5os">
+                            <rect key="frame" x="19" y="193" width="256" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <string key="text">       黑皮葡萄酒,黑皮葡萄,酒黑皮葡萄酒黑皮葡萄酒黑皮葡,萄酒黑皮葡萄酒黑皮葡萄酒黑皮葡萄酒,黑皮葡萄酒黑皮葡萄,酒黑皮葡萄酒黑皮葡萄酒黑皮,葡萄酒黑皮葡,萄酒黑皮葡萄酒,黑皮葡萄酒,黑皮葡萄酒黑皮葡萄酒黑皮葡萄,酒黑皮,葡萄酒黑皮葡萄,酒.黑皮葡萄酒黑皮葡萄,酒黑皮,葡萄酒黑皮葡萄,酒.酒黑皮葡萄,酒.黑皮葡萄酒黑皮葡萄,酒黑皮,葡萄酒黑皮葡萄,酒.</string>
+                            <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="16"/>
+                            <color key="textColor" red="0.51764705882352935" green="0.51764705882352935" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="588x294.png" id="knc-ab-5pQ" customClass="ITTImageView">
+                            <rect key="frame" x="0.0" y="0.0" width="294" height="146"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="eWT-9G-THM">
+                            <rect key="frame" x="19" y="183" width="256" height="175"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="textColor" red="0.51764705882352935" green="0.51764705882352935" blue="0.51764705882352935" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <view contentMode="scaleToFill" id="fU9-ZT-LQq">
+                            <rect key="frame" x="0.0" y="359" width="294" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="level_more_image.png" id="xKR-KN-4e0">
+                                    <rect key="frame" x="139" y="13" width="17" height="8"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="c26-J0-vWx">
+                                    <rect key="frame" x="93" y="0.0" width="109" height="34"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="levelMore:" destination="-1" eventType="touchUpInside" id="Pp7-DU-RGa"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.92156862745098034" green="0.90588235294117647" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Im1-KY-BTO">
+                    <rect key="frame" x="282" y="29" width="38" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="wineDetail_delegate_image.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="popViewDelegate:" destination="-1" eventType="touchUpInside" id="VO7-GI-YHk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <view contentMode="scaleToFill" id="Agb-gd-L3R">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="binding_background_image.png" id="eCA-e1-1fZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <view clipsSubviews="YES" contentMode="scaleToFill" id="nIi-bT-vIh">
+                    <rect key="frame" x="16" y="43" width="289" height="394"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="570x780.png" id="4UP-Yx-O4d" customClass="ITTImageView">
+                            <rect key="frame" x="2" y="2" width="285" height="390"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9F4-8Z-Jt8">
+                    <rect key="frame" x="285" y="24" width="38" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="wineDetail_delegate_image.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="certificateButton:" destination="-1" eventType="touchUpInside" id="fqz-Kl-9cq"/>
+                        <action selector="popViewDelegate:" destination="-1" eventType="touchUpInside" id="SbE-fQ-FOJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+        <view contentMode="scaleToFill" id="bma-dG-n8c">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail_help_bgImage.png" id="7k5-it-0fq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里！这里！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EOY-da-cnN">
+                    <rect key="frame" x="180" y="499" width="120" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detal_help_arrow.png" id="r2o-za-VTN">
+                    <rect key="frame" x="226" y="523" width="27" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="iQ7-DN-gCJ" appends="YES" id="wk9-VE-69u"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="iQ7-DN-gCJ">
+            <connections>
+                <action selector="newHandTaped:" destination="-1" id="94s-K9-Tnu"/>
+            </connections>
+        </tapGestureRecognizer>
+        <view alpha="0.80000000000000004" contentMode="scaleToFill" id="mdB-gd-zdX">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收藏成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lif-fn-tWq">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="570x780.png" width="570" height="780"/>
+        <image name="588x294.png" width="588" height="294"/>
+        <image name="binding_background_image.png" width="640" height="1136"/>
+        <image name="detail_add_image.png" width="60" height="60"/>
+        <image name="detail_backButton_image.png" width="48" height="48"/>
+        <image name="detail_buy_image.png" width="60" height="60"/>
+        <image name="detail_collectionSelected_image.png" width="60" height="60"/>
+        <image name="detail_collection_image.png" width="60" height="60"/>
+        <image name="detail_help_bgImage.png" width="640" height="1036"/>
+        <image name="detail_newBackground_image.png" width="640" height="1136"/>
+        <image name="detail_voice3_image.png" width="48" height="40"/>
+        <image name="detal_help_arrow.png" width="54" height="78"/>
+        <image name="level_more_image.png" width="34" height="16"/>
+        <image name="navBar_background_image.png" width="640" height="128"/>
+        <image name="wineDetail_delegate_image.png" width="56" height="56"/>
+        <image name="wineDetail_level_background_image.png" width="588" height="696"/>
+        <image name="wineDteail_pic_image.png" width="588" height="294"/>
+    </resources>
+</document>
